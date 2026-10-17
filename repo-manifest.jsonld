@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/huggingface/safetensors/commit/e246a2560645b7525f5775669ed816eb57c5bcc8",
       "git:hexsha": "e246a2560645b7525f5775669ed816eb57c5bcc8",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-17T01:52:17.937425+00:00"
     },
     {
       "@id": "https://repolex.ai/r/huggingface/safetensors/commit/5874d0ef8f0ecc02d2367c08b6661443605d4b5c",
