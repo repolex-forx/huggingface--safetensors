@@ -1,0 +1,11 @@
+{
+  "org": "huggingface",
+  "repo": "safetensors",
+  "versions": [
+    {
+      "commit": "e246a2560645b7525f5775669ed816eb57c5bcc8",
+      "tag": "",
+      "parsed_at": "2026-10-17T01:52:17.942829+00:00"
+    }
+  ]
+}
