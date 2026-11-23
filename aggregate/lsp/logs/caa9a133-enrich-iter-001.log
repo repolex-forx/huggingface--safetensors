@@ -1,0 +1,24 @@
+[2026-11-23T06:57:19Z] === ENRICH ITERATION 1 START | repo=huggingface/safetensors sha=caa9a133 ===
+[2026-11-23T06:57:19Z] [iter=1] PHASE START: enrich repo=huggingface/safetensors sha=caa9a133 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/caa9a133-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/caa9a133f39efbcfb754d7bfdc8884cf9ccf367f.nq.gz
+[2026-11-23T06:57:19Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-11-23T06:57:25Z] [iter=1] AST store loaded triples=393950 load_secs=6 mem_mb=632 MB
+[2026-11-23T06:57:25Z] [iter=1] Step 2: Finding LSP targets mem_mb=632 MB
+[2026-11-23T06:57:26Z] [iter=1] LSP targets found call_sites=3758 imports=206 extends=4 implements=1 secs=0
+[2026-11-23T06:57:26Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=632 MB
+[2026-11-23T06:57:27Z] [iter=1] Position index built positions=25419 nodes_with_types=32911 secs=1 mem_mb=632 MB
+[2026-11-23T06:57:27Z] [iter=1] Step 3: Starting LSP resolution mem_mb=632 MB already_completed_types=[] already_completed_files=0
+[2026-11-23T06:57:27Z] [iter=1] Resolving target type target_type=call_site count=3758
+[2026-11-23T06:57:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=5 resolved=458 errors=0 current=bindings/python/tests/test_pt_comparison.py
+[2026-11-23T06:59:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=21 resolved=1292 errors=0 current=attacks/torch_ace_create.py
+[2026-11-23T06:59:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=40 resolved=1515 errors=0 current=safetensors/src/tensor.rs
+[2026-11-23T07:00:10Z] [iter=1] Target type resolved target_type=call_site resolved=2333 errors=0 secs=162 mem_mb=632 MB
+[2026-11-23T07:00:10Z] [iter=1] Resolving target type target_type=import_statement count=206
+[2026-11-23T07:00:17Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=3.0 files_done=40 resolved=153 errors=0 current=bindings/python/src/view.rs
+[2026-11-23T07:00:20Z] [iter=1] Target type resolved target_type=import_statement resolved=168 errors=0 secs=10 mem_mb=632 MB
+[2026-11-23T07:00:20Z] [iter=1] Resolving target type target_type=extends_clause count=4
+[2026-11-23T07:00:21Z] [iter=1] Target type resolved target_type=extends_clause resolved=4 errors=0 secs=1 mem_mb=632 MB
+[2026-11-23T07:00:21Z] [iter=1] Resolving target type target_type=implements_clause count=1
+[2026-11-23T07:00:24Z] [iter=1] Target type resolved target_type=implements_clause resolved=1 errors=0 secs=4 mem_mb=632 MB
+[2026-11-23T07:02:04Z] [iter=1] Step 5: Writing final enrichment file triples=32528
+[2026-11-23T07:02:05Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/caa9a133f39efbcfb754d7bfdc8884cf9ccf367f.nq.gz size_kb=666
+[2026-11-23T07:02:05Z] [iter=1] PHASE END: enrich elapsed_s=286 elapsed_min=4.8 total_triples=32528
