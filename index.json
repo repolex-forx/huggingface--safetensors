@@ -3,6 +3,11 @@
   "repo": "safetensors",
   "versions": [
     {
+      "commit": "caa9a133f39efbcfb754d7bfdc8884cf9ccf367f",
+      "tag": "v0.8.0-rc.0",
+      "parsed_at": "2026-11-23T07:04:10.910564+00:00"
+    },
+    {
       "commit": "e246a2560645b7525f5775669ed816eb57c5bcc8",
       "tag": "",
       "parsed_at": "2026-10-17T01:52:17.942829+00:00"
